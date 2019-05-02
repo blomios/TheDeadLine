@@ -11,7 +11,7 @@ public class Teleporter : MonoBehaviour
         if(collision.tag == "Player")
         {
             if(teleporterTarget)
-                collision.gameObject.transform.position = teleporterTarget.transform.position;
+                collision.gameObject.transform.parent.position = teleporterTarget.transform.position;
         }
     }
 }
